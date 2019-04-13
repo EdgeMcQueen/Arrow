@@ -1,12 +1,6 @@
 //Подключение глобальных настроек стиля
 @import "stylesheets/stylesheets.scss";
 
-div{
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
 //Подключение блоков страницы
 @import "block/_wrapper.scss"; //Основные параметры, обнуления и разметка
 @import "block/_header.scss"; //Стиль блока шапки
