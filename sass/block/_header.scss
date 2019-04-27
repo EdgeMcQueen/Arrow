@@ -1,0 +1,135 @@
+.header {
+  width: 100%;
+  height: 960px;
+  background-image: url(../img/hero-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    @include raleway-light;
+
+    .header_nav-list{
+      display: flex;
+      justify-content: space-between;
+      width: 490px;
+
+      .header_nav-list-item{
+        display: flex;
+        align-items: center;
+        width: 20%;
+      }
+
+      .nav-list-link{
+        display: block;
+        margin: auto;
+        text-align: right;
+        transition: $all-ease-05;
+        &:hover{
+          color: $general-color-black;
+        }
+        &::before{
+          content: '<';
+          visibility: hidden;
+        }
+        &::after{
+          content: '>';
+          visibility: hidden;
+        }
+        &:hover::before{
+          visibility: visible;
+        }
+        &:hover::after{
+          visibility: visible;
+        }
+      }
+    }
+
+}
+
+.header_content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 750px;
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  color: $general-color;
+
+
+  .penta-icon{
+    transition: $all-ease-05;
+    &:hover{
+      filter: invert(1)
+              drop-shadow(0 0 5px $general-color-black)
+              drop-shadow(0 0 50px $general-color-black); // чтобы страница чуть лагала;
+    }
+  }
+
+  .header_content-text{
+    text-align: center;
+  }
+
+  .know-more{
+    padding: 12px 35px;
+    border: 3px solid $general-color;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: $all-ease-05;
+    &:hover{
+      background-color: $general-color;
+      border: 3px solid $general-color-black;
+      @include raleway-medium;
+      color: $general-color-black;
+    }
+    &::before{
+      content: '< ';
+      visibility: hidden;
+    }
+    &::after{
+      content: ' >';
+      visibility: hidden;
+    }
+    &:hover::before{
+      visibility: visible;
+    }
+    &:hover::after{
+      visibility: visible;
+    }
+  }
+}
+
+.scroll_down_icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  height: 70px;
+  margin-bottom: 55px;
+  color: $general-color-black;
+  filter: invert(1);
+  transition: $all-ease-05;
+  &:hover{
+    filter: invert(0);
+  }
+
+  .scroll_down_icon-mouse{
+    margin-bottom: 10px;
+  }
+}

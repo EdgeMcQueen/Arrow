@@ -1,14 +1,10 @@
 //Подключение глобальных настроек стиля
 @import "stylesheets/stylesheets.scss";
 
-div{
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
-
 //Подключение блоков страницы
 @import "block/_wrapper.scss"; //Основные параметры, обнуления и разметка
+@import "block/_global.scss"; //Глобальные настройки
+@import "block/_menu.scss"; //Стиль блока выпадающего меню
 @import "block/_header.scss"; //Стиль блока шапки
 @import "block/_service.scss"; //Стиль блока сервиса
 @import "block/_portfolio.scss"; //Стиль блока портфолио
