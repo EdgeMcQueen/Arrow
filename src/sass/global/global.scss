@@ -1,8 +1,8 @@
-@import "_animation.scss"; // переменные анимации
-@import "_color.scss"; // переменные цветов
-@import "_font-face.scss"; // загрузка шрифтов
-@import "_global-class.scss"; // стили для глобальных классов (.content_container, .wrapper)
-@import "_mixins.scss"; // миксины
-@import "_root.scss"; // стили для корневых элементов (*, body, html)
-@import "_scrollbar.scss"; // стиль полосы прокрутки
-@import "_type.scss"; // стили шрифтов
+@import "font-face"; // загрузка шрифтов
+@import "type"; // стили шрифтов
+@import "mixins"; // миксины
+@import "animation"; // переменные анимации
+@import "color"; // переменные цветов
+@import "global-class"; // стили для глобальных классов (.content_container, .wrapper)
+@import "root"; // стили для корневых элементов (*, body, html)
+@import "scrollbar"; // стиль полосы прокрутки
