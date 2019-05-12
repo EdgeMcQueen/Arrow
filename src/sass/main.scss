@@ -6,6 +6,7 @@
 
 // стили разметки
 
+@import "block/_global.scss"; //Глобальные стилевые настройки
 @import "block/_wrapper.scss"; //Основные параметры, обнуления и разметка
 @import "block/_menu.scss"; //Стиль блока выпадающего меню
 @import "block/_header.scss"; //Стиль блока шапки

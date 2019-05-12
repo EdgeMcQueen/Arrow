@@ -1,5 +1,5 @@
 .burger-menu{
-  top: -70%;
+  top: -73%;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -25,7 +25,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
     width: 280px;
-    height: 70%;
+    height: auto;
+    overflow-y: hidden;
   }
 
   &__list-item {

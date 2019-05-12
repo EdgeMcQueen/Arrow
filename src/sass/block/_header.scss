@@ -7,42 +7,50 @@
   height: auto;
 }
 
-.header {
-  width: 100%;
-  height: 960px;
-  background-image: url(../img/hero-01.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+	.header {
+    width: 100%;
+    height: 480px;
+	  background-image: url(../img/hero-01.jpg);
+	  background-repeat: no-repeat;
+		background-position: top center;
+	  background-size: cover;
 
 
-&__navigation {
+		&__navigation {
     display: none;
   }
 }
 
-.header_content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 750px;
-  height: 300px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 18px;
-  color: $general-color;
+	.header__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: $general-color;
 
 
-  .penta-icon{
-    transition: $all-ease-05;
-    &:hover{
-      filter: invert(1)
-              drop-shadow(0 0 5px $general-color-black)
-              drop-shadow(0 0 50px $general-color-black); // чтобы страница чуть лагала;
-    }
+    .penta-icon{
+      transition: $all-ease-05;
+      &:hover{
+        filter: invert(1)
+                drop-shadow(0 0 5px $general-color-black)
+                drop-shadow(0 0 50px $general-color-black); // чтобы страница чуть лагала;
+      }
   }
 
-  .header_content-text{
+
+        .penta--size {
+          width: 75px;
+          height: 75px;
+        }
+
+  .header__content-text{
+    margin-top: 20px;
     text-align: center;
   }
 
@@ -61,21 +69,21 @@
   }
 }
 
-.scroll_down_icon{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 120px;
-  height: 70px;
-  margin-bottom: 55px;
-  color: $general-color-black;
-  filter: invert(1);
-  transition: $all-ease-05;
-  &:hover{
-    filter: invert(0);
-  }
+	.scroll-down-icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 120px;
+        height: 70px;
+        margin-bottom: 55px;
+        color: $general-color-black;
+        filter: invert(1);
+        transition: $all-ease-05;
+        &:hover{
+          filter: invert(0);
+        }
 
-  .scroll_down_icon-mouse{
-    margin-bottom: 10px;
-  }
+    .scroll-down-icon-mouse{
+     margin-bottom: 10px;
+    }
 }

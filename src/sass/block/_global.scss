@@ -2,23 +2,11 @@
   box-sizing: content-box;
 }
 
-.content_container {
-  display: flex;
-  max-width: 1170px;
-  height: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+.box--matter{
+  margin-top: 70px;
 }
 
-#curve_bottom{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 200px;
-}
+@include content_container;
 
 ul,
 li,
