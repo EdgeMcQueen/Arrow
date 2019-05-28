@@ -1,0 +1,27 @@
+// links hover
+
+.link--hover {
+  transition: $all-ease-05;
+
+	&::before {
+		content: '< ';
+		visibility: hidden;
+	}
+
+	&::after {
+		content: '< ';
+		visibility: hidden;
+	}
+
+  &:hover::before {
+	  content: '< ';
+	  visibility: visible;
+	  transition: $all-ease-05;
+  }
+
+  &:hover::after{
+    content: ' >';
+	  visibility: visible;
+	  transition: $all-ease-05;
+  }
+} // End of .link--hover
