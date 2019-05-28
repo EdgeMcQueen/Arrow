@@ -1,1 +1,7 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 540" fill="#fff"><title>top_shape</title><polygon points="0 0 960 540 1920 0 0 0"/></svg>
+<!--
+Encoded:
+%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 540' fill='%23fff'%3E%3Ctitle%3Etop_shape%3C/title%3E%3Cpolygon points='0 0 960 540 1920 0 0 0'/%3E%3C/svg%3E%0A
+For CSS:
+background-image: url("data:image/svg+xml,%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 540' fill='%23fff'%3E%3Ctitle%3Etop_shape%3C/title%3E%3Cpolygon points='0 0 960 540 1920 0 0 0'/%3E%3C/svg%3E%0A");
+-->

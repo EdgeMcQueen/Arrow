@@ -10,9 +10,9 @@
   <title>Arrow v3.0</title>
 </head>
 <body class="body">
-  <div id="burger-menu" class="burger-menu" hidden>
+  <div id="burger-menu" class="burger-menu">
     <ul class="burger-menu__list">
-      <li class="burger-menu__list-item"><img class="menu-logo" src="icons/menu-logo.png" alt="Логотип сайта" width="72px" height="43px"></li>
+      <li class="burger-menu__list-item"><img class="menu-logo" src="icons/menu-logo.png" alt="Логотип сайта" width="72" height="43"></li>
       <li class="burger-menu__list-item"><a href="#services-block" class="burger-menu__link link--hover">Services</a></li>
       <li class="burger-menu__list-item"><a href="#portfolio-block" class="burger-menu__link link--hover">Portfolio</a></li>
       <li class="burger-menu__list-item"><a href="#team-block" class="burger-menu__link link--hover">Team</a></li>
@@ -23,17 +23,17 @@
 <!-- иконка бургер меню -->
 	<input type="checkbox" id="menu-toogle" />
 	<label id="menu-burger" class="menu-burger" for="menu-toogle">
-		<div class="menu-burger-line menu-burger-1"></div>
-		<div class="menu-burger-line menu-burger-2"></div>
-		<div class="menu-burger-line menu-burger-3"></div>
+		<span class="menu-burger-line menu-burger-1"></span>
+		<span class="menu-burger-line menu-burger-2"></span>
+		<span class="menu-burger-line menu-burger-3"></span>
 	</label>
   </div>
 
-  <header class="header block--metter">
+  <header class="header">
     <div class="content_container">
     <div class="header-wrapper box--matter">
     <nav class="header__nav">
-      <img class="logo" src="icons/logo.png" alt="Логотип сайта" width="72px" height="43px">
+      <img class="logo" src="icons/logo.png" alt="Логотип сайта" width="72" height="43">
       <ul class="header__nav-list">
         <li class="header__nav-list-item"><a href="#services-block" class="header__nav-link link--hover">Services</a></li>
         <li class="header__nav-list-item"><a href="#portfolio-block" class="header__nav-link link--hover">Portfolio</a></li>
@@ -45,7 +45,8 @@
     </nav>
 
     <section class="header__content">
-      <img class="penta-icon penta--size" src="icons/penta-logo.png" alt="Иконка сайта в шестигранной рамке" width="105px" height="121px">
+			<h1>Arrow mockup!</h1>
+      <img class="penta-icon penta--size" src="icons/penta-logo.png" alt="Иконка сайта в шестигранной рамке" width="105" height="121">
       <span class="header__content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </span>
@@ -54,28 +55,31 @@
     </div>
     </div>
 		<div class="bottom_shape">
-				<a  class="scroll-down-icon" href=""><img class="scroll-down-icon-mouse" src="icons/mouse_scrolling-50.png" alt="">scroll down</a>
+				<a  class="scroll-down-icon" href="#services-block"><img class="scroll-down-icon-mouse" src="icons/mouse_scrolling-50.png" alt="">scroll down</a>
 		</div>
 		<!-- /.bottom_shape -->
   </header>
 
   <main>
     <section id="services-block" class="services">
+		    <div class="top_shape" hidden>
+		    </div>
+		    <!-- /.top_shape -->
       <div class="content_container">
-      <h2 class="block_headline">our services</h2>
-      <div class="services_box">
+		    <h2 class="services__headline block--headline block--headline-b">our services</h2>
+				<div class="services__box">
         <img src="icons/idea-100.png" alt="idea icon" class="box_icon">
-        <h3 class="box_headline">Idea</h3>
-        <p class="box_text">
+        <h3 class="services__box-headline">Idea</h3>
+        <p class="services__box-text">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
       </div>
 
-      <div class="services_box">
-        <img src="icons/design-100.png" alt="design icon" class="box_icon">
-        <h3 class="box_headline">Design</h3>
-        <p class="box_text">
+      <div class="services__box">
+        <img class="box_icon" src="icons/design-100.png" alt="design icon">
+        <h3 class="box__headline">Design</h3>
+        <p class="box__text">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
@@ -89,13 +93,12 @@
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
       </div>
-      <a  class="scroll_down_icon" href=""><img class="scroll_down_icon-mouse" src="icons/mouse_scrolling-50.png" alt="">scroll down</a>
     </div>
     </section>
 
     <section class="our-portfolio">
       <div class="content_container">
-        <h2 class="block_headline">our portfolio</h2>
+        <h2 class="portfolio__headline block--headline block--headline-w block--headline-b">our portfolio</h2>
         <div class="portfolio_content">
           <div class="portfolio_box">
             <img src="p1.jpg" alt="portfolio image" class="portfolio_image">
@@ -133,13 +136,12 @@
             <button class="image_zoom"></button>
           </div>
         </div>
-        <a  class="scroll_down_icon" href=""><img class="scroll_down_icon-mouse" src="icons/mouse_scrolling-50.png" alt="">scroll down</a>
       </div>
     </section>
 
     <section class="our_team">
       <div class="content_container">
-        <h2 class="block_headline">our team</h2>
+        <h2 class="team__headline block--headline block--headline-w block--headline-b">our team</h2>
         <p class="our_team-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
@@ -193,7 +195,7 @@
 
     <section class="our_offices">
       <div class="content_container">
-        <h2 class="block_headline">our offices</h2>
+        <h2 class="offices__headline block--headline block--headline-w block--headline-b">our offices</h2>
         <p class="our_offices-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
@@ -207,7 +209,7 @@
 
     <section class="our_clients">
       <div class="content_container">
-        <h2 class="block_headline">our clients</h2>
+        <h2 class="clients__headline block--headline block--headline-w block--headline-b">our clients</h2>
         <p class="our_clients-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
@@ -230,7 +232,7 @@
 
     <section class="contact_us">
       <div class="content_container">
-        <h2 class="block_headline">contact us</h2>
+        <h2 class="contact__headline block--headline block--headline-w block--headline-b">contact us</h2>
         <p class="contact_us-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </p>
@@ -267,9 +269,6 @@
       <span class="copiright">All Rights Reserved 2015 - Arrow Agency</span>
     </div>
   </footer>
+  <script src="js/burger.js"></script>
 </body>
-
-<script src="js/burger.js"></script>
-
-
 </html>

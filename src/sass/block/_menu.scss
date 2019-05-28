@@ -12,6 +12,7 @@
   background-position: center;
   font-size: 50px;
   transition: $all-ease-05;
+	display: none;
   &.active{
     top: 0;
   }
