@@ -1,13 +1,11 @@
-// объединяем все SCSS файлы
+// integrate all SCSS files
 
-// глобальные стили
+// global style settings
 
 @import "global/global.scss";
 
-// стили разметки
+// block styles
 
-@import "block/_global.scss"; //Глобальные стилевые настройки
-@import "block/_wrapper.scss"; //Основные параметры, обнуления и разметка
 @import "block/_menu.scss"; //Стиль блока выпадающего меню
 @import "block/_header.scss"; //Стиль блока шапки
 @import "block/_service.scss"; //Стиль блока сервиса
@@ -18,6 +16,6 @@
 @import "block/_contact.scss"; //Стиль блока контактов и связи
 @import "block/_footer.scss"; //Стиль блока подвал
 
-// медиа запросы
+// media query
 
 @import "media/media.scss";
