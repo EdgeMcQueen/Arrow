@@ -1,0 +1,77 @@
+//Обнуления и сброс
+
+:root {
+	box-sizing: border-box; /*применяет значение border-box к корневому элементу*/
+	font-size: calc(0.5em+1vw);
+  }
+
+  *,
+  ::before,
+  ::after {
+	box-sizing: inherit; /*указывает всем другим элементам и псевдоэлементам наследовать значение box-sizing*/
+  }
+
+
+html {
+	font-size: 18px;
+}
+
+body {
+	@include raleway-regular;
+	font-size: 18px;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+//-------------------------------------------
+
+// import fonts
+
+@include font-face;
+
+//-------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: $general-color;
+}
+
+a,
+button,
+input {
+	outline: none;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+// centering main content
+
+.content_container {
+	display: flex;
+	max-width: 1170px;
+	height: auto;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
