@@ -1,0 +1,22 @@
+// Анимации
+
+@mixin ease($ease) {
+  transition: $ease;
+}
+
+@mixin ease-in($ease-in){
+  transition: $ease-in;
+}
+
+@mixin ease-in-out($ease-in-out){
+  transition: $ease-in-out;
+}
+
+//Keyframes
+
+@mixin visible-right{
+  animation: visible-right 0.3s;
+}
+@mixin hide-right{
+  animation: hide-right 0.3s;
+}
