@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
   <title>Arrow v3.0</title>
 </head>
 <body class="body">
-  <div id="burger-menu" class="burger-menu">
+  <div id="burger-menu" class="burger-menu" vis-hide>
     <ul class="burger-menu__list">
       <li class="burger-menu__list-item"><img class="menu-logo" src="icons/menu-logo.png" alt="Логотип сайта" width="72" height="43"></li>
-      <li class="burger-menu__list-item"><a href="#services-block" class="burger-menu__link link--hover">Services</a></li>
-      <li class="burger-menu__list-item"><a href="#portfolio-block" class="burger-menu__link link--hover">Portfolio</a></li>
-      <li class="burger-menu__list-item"><a href="#team-block" class="burger-menu__link link--hover">Team</a></li>
-      <li class="burger-menu__list-item"><a href="#offices-block" class="burger-menu__link link--hover">Offices</a></li>
-      <li class="burger-menu__list-item"><a href="#clients-block" class="burger-menu__link link--hover">Clients</a></li>
-      <li class="burger-menu__list-item"><a href="#contact-block" class="burger-menu__link link--hover">Contact</a></li>
+      <li class="burger-menu__list-item"><a href="#services-block" class="burger-menu__link">Services</a></li>
+      <li class="burger-menu__list-item"><a href="#portfolio-block" class="burger-menu__link">Portfolio</a></li>
+      <li class="burger-menu__list-item"><a href="#team-block" class="burger-menu__link">Team</a></li>
+      <li class="burger-menu__list-item"><a href="#offices-block" class="burger-menu__link">Offices</a></li>
+      <li class="burger-menu__list-item"><a href="#clients-block" class="burger-menu__link">Clients</a></li>
+      <li class="burger-menu__list-item"><a href="#contact-block" class="burger-menu__link">Contact</a></li>
     </ul>
 <!-- иконка бургер меню -->
 	<input type="checkbox" id="menu-toogle" />
@@ -31,33 +32,32 @@
 
   <header class="header">
     <div class="content_container">
-    <div class="header-wrapper box--matter">
-    <nav class="header__nav">
-      <img class="logo" src="icons/logo.png" alt="Логотип сайта" width="72" height="43">
-      <ul class="header__nav-list">
-        <li class="header__nav-list-item"><a href="#services-block" class="header__nav-link link--hover">Services</a></li>
-        <li class="header__nav-list-item"><a href="#portfolio-block" class="header__nav-link link--hover">Portfolio</a></li>
-        <li class="header__nav-list-item"><a href="#team-block" class="header__nav-link link--hover">Team</a></li>
-        <li class="header__nav-list-item"><a href="#offices-block" class="header__nav-link link--hover">Offices</a></li>
-        <li class="header__nav-list-item"><a href="#clients-block" class="header__nav-link link--hover">Clients</a></li>
-        <li class="header__nav-list-item"><a href="#contact-block" class="header__nav-link link--hover">Contact</a></li>
+    <div class="header-wrapper">
+    <nav class="nav">
+      <img class="main_logo" src="icons/logo.png" alt="Логотип сайта" width="72" height="43">
+      <ul class="nav_list">
+        <li class="nav_list-item"><a href="#services-block" class="nav_link">Services</a></li>
+        <li class="nav_list-item"><a href="#portfolio-block" class="nav_link">Portfolio</a></li>
+        <li class="nav_list-item"><a href="#team-block" class="nav_link">Team</a></li>
+        <li class="nav_list-item"><a href="#offices-block" class="nav_link">Offices</a></li>
+        <li class="nav_list-item"><a href="#clients-block" class="nav_link">Clients</a></li>
+        <li class="nav_list-item"><a href="#contact-block" class="nav_link">Contact</a></li>
       </ul>
     </nav>
 
-    <section class="header__content">
-			<h1>Arrow mockup!</h1>
-      <img class="penta-icon penta--size" src="icons/penta-logo.png" alt="Иконка сайта в шестигранной рамке" width="105" height="121">
-      <span class="header__content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+    <section class="header_content">
+			<h1 vis-hide>Arrow mockup!</h1>
+      <img class="penta_icon" src="icons/penta-logo.png" alt="Иконка сайта в шестигранной рамке" width="105" height="121">
+      <span class="header_content-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
       </span>
-      <a class="header__content-link link--hover" href="">Know More</a>
+      <a class="header_content-link" href="">Know More</a>
     </section>
+    <a  class="scroll-down-icon" href="#services-block"><img class="scroll-down-icon-img" src="icons/mouse_scrolling-50.png" alt="computer mouse icon">scroll down</a>
     </div>
     </div>
 		<div class="bottom_shape">
-				<a  class="scroll-down-icon" href="#services-block"><img class="scroll-down-icon-mouse" src="icons/mouse_scrolling-50.png" alt="">scroll down</a>
 		</div>
-		<!-- /.bottom_shape -->
   </header>
 
   <main>
@@ -96,7 +96,7 @@
     </div>
     </section>
 
-    <section class="our-portfolio">
+    <section id="portfolio-block" class="our-portfolio">
       <div class="content_container">
         <h2 class="portfolio__headline block--headline block--headline-w block--headline-b">our portfolio</h2>
         <div class="portfolio_content">
@@ -139,7 +139,7 @@
       </div>
     </section>
 
-    <section class="our_team">
+    <section id="team-block" class="our_team">
       <div class="content_container">
         <h2 class="team__headline block--headline block--headline-w block--headline-b">our team</h2>
         <p class="our_team-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -193,7 +193,7 @@
       </div>
     </section>
 
-    <section class="our_offices">
+    <section id="offices-block" class="our_offices">
       <div class="content_container">
         <h2 class="offices__headline block--headline block--headline-w block--headline-b">our offices</h2>
         <p class="our_offices-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -207,7 +207,7 @@
       </div>
     </section>
 
-    <section class="our_clients">
+    <section id="clients-block" class="our_clients">
       <div class="content_container">
         <h2 class="clients__headline block--headline block--headline-w block--headline-b">our clients</h2>
         <p class="our_clients-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -230,7 +230,7 @@
       </div>
     </section>
 
-    <section class="contact_us">
+    <section id="contact-block" class="contact_us">
       <div class="content_container">
         <h2 class="contact__headline block--headline block--headline-w block--headline-b">contact us</h2>
         <p class="contact_us-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -269,6 +269,8 @@
       <span class="copiright">All Rights Reserved 2015 - Arrow Agency</span>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="js/burger.js"></script>
+  <script src="js/anchorscroll.js"></script>
 </body>
 </html>

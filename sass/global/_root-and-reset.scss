@@ -2,7 +2,7 @@
 
 :root {
 	box-sizing: border-box; /*применяет значение border-box к корневому элементу*/
-	font-size: calc(0.5em+1vw);
+	font-size: 18px;
   }
 
   *,
@@ -59,16 +59,30 @@ input {
 
 ul,
 li {
+  margin: 0;
+  padding: 0;
   list-style: none;
   text-decoration: none;
+}
+
+[vis-hide] {
+	border: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: relative; // different - for reading order in macOS VO
+	display: block; // new - for reading order in macOS VO
 }
 
 // centering main content
 
 .content_container {
-	display: flex;
 	max-width: 1170px;
-	height: auto;
+	height: inherit;
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-left: 15px;
