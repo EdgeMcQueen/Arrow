@@ -20,4 +20,53 @@ $txt-blue-col: 			#2980b9;
 //background & others
 $background-col: 		#fafcfe;
 $grid-hover-col: 		#3e8cc0;
+$grid-hover-rgba: 	rgba(62, 140, 192, 0.58);
 $gradient-col: 			#212121;
+
+
+
+// единый класс для иконок:
+.icons{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: $background-col;
+	max-width: 55px;
+			width: 100%;
+			height: 55px;
+
+		.tw,
+		.link-in,
+		.inst{
+			&::before{
+				content: '';
+				display: inline-flex;
+			}
+		}
+
+		.tw{
+			&::before{
+				width: 30px;
+				height: 24px;
+				background: url(../icons/twitter-100.png);
+			}
+		}
+
+		.link-in{
+			&::before{
+				width: 30px;
+				height: 30px;
+				background: url(../icons/linkedin-100.png);
+			}
+		}
+
+		.inst{
+			&::before{
+				width: 30px;
+				height: 30px;
+				background: url(../icons/instagram-100.png);
+			}
+		}
+		
+}

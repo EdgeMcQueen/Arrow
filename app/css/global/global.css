@@ -1,4 +1,53 @@
 @charset "UTF-8";
+.icons {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #fafcfe;
+  max-width: 55px;
+  width: 100%;
+  height: 55px;
+}
+
+.icons .tw::before,
+.icons .link-in::before,
+.icons .inst::before {
+  content: '';
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.icons .tw::before {
+  width: 30px;
+  height: 24px;
+  background: url(../icons/twitter-100.png);
+}
+
+.icons .link-in::before {
+  width: 30px;
+  height: 30px;
+  background: url(../icons/linkedin-100.png);
+}
+
+.icons .inst::before {
+  width: 30px;
+  height: 30px;
+  background: url(../icons/instagram-100.png);
+}
+
 :root {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17,6 +66,8 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {

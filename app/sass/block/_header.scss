@@ -16,8 +16,8 @@
 
 .nav {
     @include flex-rw-btw;
-    width: 100%;
     max-width: 1140px;
+        width: 100%;
 
     &_list {
         display: inline-flex;
