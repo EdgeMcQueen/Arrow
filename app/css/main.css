@@ -12,8 +12,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #fafcfe;
   max-width: 55px;
   width: 100%;
@@ -63,13 +62,7 @@
   /*указывает всем другим элементам и псевдоэлементам наследовать значение box-sizing*/
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
+/*для остальных элементов, в случае необходимости, присваиваеться box-sizing: content-box*/
 html {
   font-size: 18px;
 }
@@ -180,6 +173,50 @@ li {
           flex-direction: row;
 }
 
+.block__headline--blue {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2980b9;
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 65px;
+}
+
+.block__headline--blue:before {
+  content: '';
+  margin: 15px auto 0 auto;
+  height: 100%;
+  width: 30px;
+  border-bottom: 5px solid #2980b9;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.block__headline--white {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fafcfe;
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 65px;
+}
+
+.block__headline--white:before {
+  content: '';
+  margin: 15px auto 0 auto;
+  height: 100%;
+  width: 30px;
+  border-bottom: 5px solid #fafcfe;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
 .header-wrapper {
   width: 100%;
   height: inherit;
@@ -203,8 +240,7 @@ li {
   width: 100%;
   height: 960px;
   background-image: url("../img/hero-01.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center center;
   position: relative;
 }
@@ -281,8 +317,7 @@ li {
 
 .header_content-link {
   border: 2px solid #ffffff;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   padding: 14px 40px;
   -webkit-transition: color 0.2s ease-in;
   -o-transition: color 0.2s ease-in;
@@ -349,28 +384,6 @@ li {
           flex-direction: column;
 }
 
-.services .content_container .services__headline {
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #2980b9;
-  position: relative;
-  margin-top: 35px;
-  margin-bottom: 65px;
-}
-
-.services .content_container .services__headline:before {
-  content: '';
-  margin: 15px auto 0 auto;
-  height: 100%;
-  width: 30px;
-  border-bottom: 5px solid #2980b9;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
 .services .content_container .services__box {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -397,6 +410,68 @@ li {
   height: auto;
 }
 
+.portfolio {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 988px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.8))), url("../img/hero-02.jpg");
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("../img/hero-02.jpg");
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8)), url("../img/hero-02.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.content_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content_container .portfolio_content {
+  display: grid;
+  grid-template-columns: 375px 390px 375px;
+  grid-template-rows: repeat(2, 200px);
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  max-width: 1140px;
+  width: auto;
+  height: 400px;
+}
+
+.content_container .portfolio_box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: inherit;
+}
+
+.content_container .portfolio_image {
+  width: inherit;
+  height: inherit;
+}
+
 .our_team .team-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -419,8 +494,7 @@ li {
   max-width: 250px;
   width: 100%;
   height: 250px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 
 .our_team .team-box .hover-content {
@@ -438,8 +512,7 @@ li {
   top: 0;
   width: 250px;
   height: 250px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background: rgba(62, 140, 192, 0.58);
   -webkit-transition: background 0.2s ease-in;
   -o-transition: background 0.2s ease-in;

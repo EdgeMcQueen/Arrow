@@ -10,13 +10,8 @@
   ::after {
 	box-sizing: inherit; /*указывает всем другим элементам и псевдоэлементам наследовать значение box-sizing*/
   }
-	
-	// убирает отступы у всех элементов дажу у тегов p, li и т.д.
-	*{
-		padding: 0;
-		margin: 0;
-		box-sizing: border-box;
-	}
+
+  /*для остальных элементов, в случае необходимости, присваиваеться box-sizing: content-box*/
 
 html {
 	font-size: 18px;
@@ -37,18 +32,9 @@ body {
 
 a {
   text-decoration: none;
-  // outline: none; // нельзя так делать!
   -webkit-tap-highlight-color: transparent;
   color: $general-color;
 }
-
-
-// нельзя так делать!
-// a,
-// button,
-// input {
-// 	outline: none;
-// }
 
 ul,
 li {

@@ -1,2 +1,45 @@
 // описываем модификаторы:
 
+.block__headline--blue{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $txt-blue-col;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 65px;
+
+        &:before{
+        content: '';
+        margin: 15px auto 0 auto;
+        height: 100%;
+        width: 30px;
+        border-bottom: 5px solid $txt-blue-col;
+        position: absolute;
+            left: 0;
+            right: 0;
+        }
+}
+
+.block__headline--white{
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $txt-white-col;
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 65px;
+
+        &:before{
+        content: '';
+        margin: 15px auto 0 auto;
+        height: 100%;
+        width: 30px;
+        border-bottom: 5px solid $txt-white-col;
+        position: absolute;
+            left: 0;
+            right: 0;
+        }
+}
