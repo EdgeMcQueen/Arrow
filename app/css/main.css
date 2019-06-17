@@ -1,0 +1,166 @@
+@charset "UTF-8";
+:root {
+  box-sizing: border-box;
+  /*применяет значение border-box к корневому элементу*/
+  font-size: 18px; }
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  /*указывает всем другим элементам и псевдоэлементам наследовать значение box-sizing*/ }
+
+html {
+  font-size: 18px; }
+
+body {
+  font-family: 'Raleway-Regular';
+  font-weight: 400;
+  font-size: 18px; }
+
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(../font/Raleway-Bold.otf); }
+@font-face {
+  font-family: Raleway-ExtraBold;
+  src: url(../font/Raleway-ExtraBold.otf); }
+@font-face {
+  font-family: Raleway-ExtraLight;
+  src: url(../font/Raleway-ExtraLight.otf); }
+@font-face {
+  font-family: Raleway-Heavy;
+  src: url(../font/Raleway-Heavy.otf); }
+@font-face {
+  font-family: Raleway-Light;
+  src: url(../font/Raleway-Light.otf); }
+@font-face {
+  font-family: Raleway-Medium;
+  src: url(../font/Raleway-Medium.otf); }
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(../font/Raleway-Regular.otf); }
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url(../font/Raleway-SemiBold.otf); }
+@font-face {
+  font-family: Raleway-Thin;
+  src: url(../font/Raleway-Thin.otf); }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #ffffff; }
+
+a,
+button,
+input {
+  outline: none; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+[vis-hide] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  display: block; }
+
+.content_container {
+  max-width: 1170px;
+  height: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; }
+
+.header-wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 35px 0; }
+
+.header {
+  width: 100%;
+  height: 960px;
+  background-image: url("../img/hero-01.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1140px; }
+  .nav_list {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 480px;
+    height: auto; }
+  .nav_list-item {
+    display: inherit;
+    line-height: 2.5; }
+  .nav_link {
+    transition: all 0.5s ease; }
+    .nav_link:hover {
+      color: #2980b9; }
+
+.header_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  width: 670px;
+  height: 280px; }
+  .header_content-text {
+    text-align: center; }
+  .header_content-link {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 14px 40px;
+    transition: all 0.5s ease; }
+    .header_content-link:hover {
+      background-color: #ffffff;
+      color: #2980b9; }
+
+.scroll-down-icon {
+  width: 110px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  line-height: 2.5;
+  transition: all 0.5s ease; }
+  .scroll-down-icon:hover {
+    color: #2980b9; }
+
+/*# sourceMappingURL=main.css.map */
