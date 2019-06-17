@@ -1,3 +1,6 @@
+// animation mixin`s
+@import "animation/_ease-mixins.scss";
+
 @mixin flex-col-btw {
     display: flex;
     flex-direction: column;

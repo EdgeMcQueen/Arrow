@@ -1,0 +1,131 @@
+@charset "UTF-8";
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /*применяет значение border-box к корневому элементу*/
+  font-size: 18px;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  /*указывает всем другим элементам и псевдоэлементам наследовать значение box-sizing*/
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: 'Raleway-Regular';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url(../font/Raleway-Bold.otf);
+}
+
+@font-face {
+  font-family: Raleway-ExtraBold;
+  src: url(../font/Raleway-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: Raleway-ExtraLight;
+  src: url(../font/Raleway-ExtraLight.otf);
+}
+
+@font-face {
+  font-family: Raleway-Heavy;
+  src: url(../font/Raleway-Heavy.otf);
+}
+
+@font-face {
+  font-family: Raleway-Light;
+  src: url(../font/Raleway-Light.otf);
+}
+
+@font-face {
+  font-family: Raleway-Medium;
+  src: url(../font/Raleway-Medium.otf);
+}
+
+@font-face {
+  font-family: Raleway-Regular;
+  src: url(../font/Raleway-Regular.otf);
+}
+
+@font-face {
+  font-family: Raleway-SemiBold;
+  src: url(../font/Raleway-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Raleway-Thin;
+  src: url(../font/Raleway-Thin.otf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  color: #ffffff;
+}
+
+a,
+button,
+input {
+  outline: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+[vis-hide] {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+
+.content_container {
+  max-width: 1170px;
+  height: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}

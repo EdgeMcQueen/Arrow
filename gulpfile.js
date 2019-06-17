@@ -13,7 +13,7 @@ var gulp        = require('gulp'),
 
 // Таск для Sass
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/sass/**/*.scss')
     .pipe(sass({
         outputStyle: 'expanded',
         errorLogToConsole: true
@@ -95,7 +95,7 @@ gulp.task('clear', function (callback) {
 })
 
 gulp.task('watch', function() {
-  gulp.watch('app/scss/**/*.scss', gulp.parallel('sass'));
+  gulp.watch('app/sass/**/*.scss', gulp.parallel('sass'));
   gulp.watch('app/*.html', gulp.parallel('code'));
   gulp.watch(['app/js/common.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
 });
