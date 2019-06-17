@@ -10,7 +10,12 @@
   ::after {
 	box-sizing: inherit; /*указывает всем другим элементам и псевдоэлементам наследовать значение box-sizing*/
   }
-
+	
+	// убирает отступы у всех элементов дажу у тегов p, li и т.д.
+	*{
+		padding: 0;
+		margin: 0;
+	}
 
 html {
 	font-size: 18px;
@@ -21,11 +26,6 @@ body {
 	font-size: 18px;
 }
 
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
 
 //-------------------------------------------
 
@@ -34,33 +34,24 @@ body {
 @include font-face;
 
 //-------------------------------------------
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	padding: 0;
-	margin: 0;
-}
 
 a {
   text-decoration: none;
-  outline: none;
+  // outline: none; // нельзя так делать!
   -webkit-tap-highlight-color: transparent;
   color: $general-color;
 }
 
-a,
-button,
-input {
-	outline: none;
-}
+
+// нельзя так делать!
+// a,
+// button,
+// input {
+// 	outline: none;
+// }
 
 ul,
 li {
-  margin: 0;
-  padding: 0;
   list-style: none;
   text-decoration: none;
 }
@@ -88,4 +79,11 @@ li {
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
+}
+
+.box-row{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
 }
