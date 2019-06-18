@@ -41,7 +41,7 @@ $gradient-col: 			#212121;
 		.inst{
 			&::before{
 				content: '';
-				display: inline-flex;
+				display: flex;
 			}
 		}
 

@@ -1,45 +1,50 @@
 // описываем модификаторы:
 
 .block__headline--blue{
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $txt-blue-col;
-    position: relative;
-    margin-top: 35px;
-    margin-bottom: 65px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $txt-blue-col;
+  position: relative;
 
-        &:before{
-        content: '';
-        margin: 15px auto 0 auto;
-        height: 100%;
-        width: 30px;
-        border-bottom: 5px solid $txt-blue-col;
-        position: absolute;
-            left: 0;
-            right: 0;
-        }
+    &:before{
+      content: '';
+      margin: 15px auto 0 auto;
+      height: 100%;
+      width: 30px;
+      border-bottom: 5px solid $txt-blue-col;
+      position: absolute;
+          left: 0;
+          right: 0;
+    }
 }
 
 .block__headline--white{
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $txt-white-col;
-    position: relative;
-    margin-top: 35px;
-    margin-bottom: 65px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $txt-white-col;
+  position: relative;
 
-        &:before{
-        content: '';
-        margin: 15px auto 0 auto;
-        height: 100%;
-        width: 30px;
-        border-bottom: 5px solid $txt-white-col;
-        position: absolute;
-            left: 0;
-            right: 0;
-        }
+    &:before{
+      content: '';
+      margin: 15px auto 0 auto;
+      height: 100%;
+      width: 30px;
+      border-bottom: 5px solid $txt-white-col;
+      position: absolute;
+          left: 0;
+          right: 0;
+    }
+}
+
+.headline-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 65px auto;
+  padding: 0 10px;
+  max-width: 350px;
+    width: 100%;
+    height: auto;
 }

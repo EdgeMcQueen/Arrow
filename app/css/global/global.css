@@ -12,7 +12,8 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: #fafcfe;
   max-width: 55px;
   width: 100%;
@@ -23,10 +24,10 @@
 .icons .link-in::before,
 .icons .inst::before {
   content: '';
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .icons .tw::before {
@@ -63,6 +64,23 @@
 }
 
 /*для остальных элементов, в случае необходимости, присваиваеться box-sizing: content-box*/
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+ul,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 18px;
 }
@@ -174,14 +192,11 @@ li {
 }
 
 .block__headline--blue {
-  display: inline-block;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   color: #2980b9;
   position: relative;
-  margin-top: 35px;
-  margin-bottom: 65px;
 }
 
 .block__headline--blue:before {
@@ -196,14 +211,11 @@ li {
 }
 
 .block__headline--white {
-  display: inline-block;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   color: #fafcfe;
   position: relative;
-  margin-top: 35px;
-  margin-bottom: 65px;
 }
 
 .block__headline--white:before {
@@ -215,4 +227,25 @@ li {
   position: absolute;
   left: 0;
   right: 0;
+}
+
+.headline-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 65px auto;
+  padding: 0 10px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
 }

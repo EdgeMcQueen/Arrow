@@ -1,5 +1,9 @@
 .our_team{
+	padding: 35px 0 25px 0;
 	
+	.content_container{
+		box-sizing: content-box;
+	}
 
 	.team-box{
 		display: flex;
@@ -13,6 +17,19 @@
 					width: 100%;
 					height: 250px;
 			border-radius: 4px;
+		}
+
+		.teamate-name{
+			margin-top: 20px;
+			font-size: 18px;
+			font-weight: bold;
+			color: $txt-blue-col;
+		}
+
+		.teamate-heldpost{
+			margin-top: 8px;
+			font-size: 16px;
+			color: $txt-black-col;
 		}
 
 
@@ -46,11 +63,12 @@
 		}
 	}
 
-
-
-
-
-
+	.our_team-text{
+		text-align: center;
+		font-size: 16px;
+		margin-top: 50px;
+		color: $txt-black-col;
+	}
 
 
 }
