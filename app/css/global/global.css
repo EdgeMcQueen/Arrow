@@ -52,7 +52,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /*применяет значение border-box к корневому элементу*/
-  font-size: 18px;
+  font-size: -webkit-calc(0.5em + 1vw);
+  font-size: calc(0.5em + 1vw);
 }
 
 *,
@@ -229,7 +230,7 @@ li {
   right: 0;
 }
 
-.headline-title {
+.block-headline--wrapper {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

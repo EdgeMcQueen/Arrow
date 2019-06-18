@@ -2,7 +2,7 @@
 
 :root {
 	box-sizing: border-box; /*применяет значение border-box к корневому элементу*/
-	font-size: 18px;
+	font-size: calc(0.5em + 1vw); //18px
   }
 
   *,

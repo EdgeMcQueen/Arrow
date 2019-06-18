@@ -9,7 +9,11 @@
 
 .content_container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+
 
     .portfolio_content {
         display: grid;
@@ -28,8 +32,8 @@
     }
 
     .portfolio_image {
-        width: inherit;
-        height: inherit;
+        width: 100%;
+        height: auto;
     }
 }
 
