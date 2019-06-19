@@ -48,3 +48,28 @@
     width: 100%;
     height: auto;
 }
+
+// фигурные козырки блоков
+
+.block--shape-top::before{
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+    left: 0;
+    right: 0;
+    top: -206px;
+  display: block;
+  background: url('../img/Sep-top.png')no-repeat center;
+}
+.block--shape-bottom::after{
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -206px;
+  display: block;
+  background: url('../img/Sep-bottom.png')no-repeat bottom;
+}

@@ -12,8 +12,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #fafcfe;
   max-width: 55px;
   width: 100%;
@@ -256,6 +255,30 @@ li {
   height: auto;
 }
 
+.block--shape-top::before {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -206px;
+  display: block;
+  background: url("../img/Sep-top.png") no-repeat center;
+}
+
+.block--shape-bottom::after {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -206px;
+  display: block;
+  background: url("../img/Sep-bottom.png") no-repeat bottom;
+}
+
 .header-wrapper {
   width: 100%;
   height: inherit;
@@ -279,8 +302,7 @@ li {
   width: 100%;
   height: 960px;
   background-image: url("../img/hero-01.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center center;
   position: relative;
 }
@@ -357,8 +379,7 @@ li {
 
 .header_content-link {
   border: 2px solid #ffffff;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   padding: 14px 40px;
   -webkit-transition: color 0.2s ease-in;
   -o-transition: color 0.2s ease-in;
@@ -371,6 +392,7 @@ li {
 }
 
 .scroll-down-icon {
+  z-index: 999;
   width: 110px;
   height: 65px;
   display: -webkit-box;
@@ -414,30 +436,7 @@ li {
           justify-content: space-around;
   position: relative;
   padding: 35px 0 25px 0;
-}
-
-.services::before {
-  content: '';
-  width: 100%;
-  height: 207px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -206px;
-  display: block;
-  background: url("../img/Sep-top.png") no-repeat center;
-}
-
-.services::after {
-  content: '';
-  width: 100%;
-  height: 207px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -206px;
-  display: block;
-  background: url("../img/Sep-bottom.png") no-repeat bottom;
+  height: 25em;
 }
 
 .services .content_container {
@@ -500,11 +499,9 @@ li {
   height: auto;
   padding: 35px 0 25px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.52))), url(../img/hero-02.jpg);
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.52)), url(../img/hero-02.jpg);
   background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.52)), url(../img/hero-02.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.52)), url(../img/hero-02.jpg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -627,8 +624,7 @@ li {
   max-width: 250px;
   width: 100%;
   height: 250px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 
 .our_team .team-box .teamate-name {
@@ -659,8 +655,7 @@ li {
   top: 0;
   width: 250px;
   height: 250px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background: rgba(62, 140, 192, 0.58);
   -webkit-transition: background 0.2s ease-in;
   -o-transition: background 0.2s ease-in;
