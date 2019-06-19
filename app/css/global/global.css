@@ -92,6 +92,11 @@ body {
   font-size: 18px;
 }
 
+html,
+body {
+  background: #fafcfe;
+}
+
 @font-face {
   font-family: Raleway-Bold;
   src: url(../font/Raleway-Bold.otf);

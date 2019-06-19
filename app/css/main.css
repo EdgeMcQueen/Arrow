@@ -92,6 +92,11 @@ body {
   font-size: 18px;
 }
 
+html,
+body {
+  background: #fafcfe;
+}
+
 @font-face {
   font-family: Raleway-Bold;
   src: url(../font/Raleway-Bold.otf);
@@ -406,6 +411,32 @@ li {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+  position: relative;
+  padding: 35px 0 25px 0;
+}
+
+.services::before {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -206px;
+  display: block;
+  background: url("../img/Sep-top.png") no-repeat center;
+}
+
+.services::after {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -206px;
+  display: block;
+  background: url("../img/Sep-bottom.png") no-repeat bottom;
 }
 
 .services .content_container {
@@ -446,6 +477,10 @@ li {
   height: auto;
 }
 
+.services .box-row {
+  margin-top: 85px;
+}
+
 .portfolio {
   display: -webkit-box;
   display: -webkit-flex;
@@ -472,6 +507,10 @@ li {
   background-position: center center;
 }
 
+.portfolio .content_container {
+  margin-top: 220px;
+}
+
 .content_container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -488,22 +527,14 @@ li {
           justify-content: center;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  margin-bottom: 160px;
 }
 
 .content_container .portfolio_content {
   display: grid;
-  grid-template-columns: 375px 390px 375px;
+  grid-template-columns: 375px 375px 375px;
   grid-template-rows: repeat(2, 200px);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   text-align: center;
-  max-width: 1140px;
-  width: auto;
-  height: 400px;
-  overflow: hidden;
-  position: relative;
 }
 
 .content_container .portfolio_box {
@@ -541,6 +572,31 @@ li {
 
 .our_team {
   padding: 35px 0 25px 0;
+  position: relative;
+}
+
+.our_team::before {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -206px;
+  display: block;
+  background: url("../img/Sep-top.png") no-repeat center;
+}
+
+.our_team::after {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -206px;
+  display: block;
+  background: url("../img/Sep-bottom.png") no-repeat bottom;
 }
 
 .our_team .content_container {

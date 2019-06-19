@@ -6,6 +6,10 @@
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.52)), url(../img/hero-02.jpg);
     background-size: cover;
     background-position: center center;
+
+    .content_container{
+        margin-top: 220px;
+    }
 }
 
 .content_container{
@@ -13,19 +17,14 @@
     flex-direction: column;
     justify-content: center;
     box-sizing: content-box;
+    margin-bottom: 160px;
 
 
     .portfolio_content {
         display: grid;
-        grid-template-columns: 375px 390px 375px;
+        grid-template-columns: 375px 375px 375px;
         grid-template-rows: repeat(2, 200px);
-        justify-content: center;
         text-align: center;
-        max-width: 1140px;
-        width: auto;
-        height: 400px;
-        overflow: hidden;
-        position: relative;
 
     }
 

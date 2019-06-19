@@ -1,5 +1,28 @@
 .our_team{
 	padding: 35px 0 25px 0;
+	position: relative;
+		&::before{
+			content: '';
+			width: 100%;
+			height: 207px;
+			position: absolute;
+				left: 0;
+				right: 0;
+				top: -206px;
+			display: block;
+			background: url('../img/Sep-top.png')no-repeat center;
+		}
+		&::after{
+			content: '';
+			width: 100%;
+			height: 207px;
+			position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -206px;
+			display: block;
+			background: url('../img/Sep-bottom.png')no-repeat bottom;
+		}
 	
 	.content_container{
 		box-sizing: content-box;
