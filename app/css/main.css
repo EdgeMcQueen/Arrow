@@ -394,6 +394,7 @@ li {
       -ms-flex-item-align: center;
           align-self: center;
   line-height: 2.5;
+  z-index: 10;
   -webkit-transition: color 0.2s ease;
   -o-transition: color 0.2s ease;
   transition: color 0.2s ease;
