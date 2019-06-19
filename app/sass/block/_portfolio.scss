@@ -25,7 +25,6 @@
         grid-template-columns: 375px 375px 375px;
         grid-template-rows: repeat(2, 200px);
         text-align: center;
-
     }
 
     .portfolio_box {
@@ -36,9 +35,13 @@
             visibility: hidden;
             position: absolute;
             z-index: -1;
+            color: $txt-white-col;
+            font-size: 1.3em;
+            @include easeIn(color $easeIn-2s);
         }
 
         &:hover .hover_box{
+            @include flex-col-btw;
             visibility: visible;
             position: absolute;
                 left: 0;
@@ -57,4 +60,24 @@
 
 .portfolio_text {
     position: absoute;
+    margin-top: 50px;
+}
+
+.image_zoom {
+    align-self: center;
+    margin-bottom: 15px;
+    border: 0;
+    outline: none;
+    width: 70px;
+    height: 70px;
+    background-color: $txt-white-col;
+    background-image: url(../icons/plus-100.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    @include easeIn(color $easeIn-2s);
+    &:hover {
+        box-shadow: inset 0 0 15px 10px $general-color-hover;
+    }
 }
