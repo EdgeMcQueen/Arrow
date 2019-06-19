@@ -63,6 +63,7 @@
 } // end of .header_content
 
 .scroll-down-icon {
+    z-index: 999;
     width: 110px;
     height: 65px;
     @include flex-col-btw;

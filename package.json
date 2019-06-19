@@ -17,5 +17,6 @@
     "gulp-uglifyjs": "^0.6.2"
   },
   "author": "ko2doo@github.com",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "https://github.com/SardorMutalov/Arrow.git"
 }
