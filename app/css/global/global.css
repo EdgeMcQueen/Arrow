@@ -12,8 +12,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #fafcfe;
   max-width: 55px;
   width: 100%;
