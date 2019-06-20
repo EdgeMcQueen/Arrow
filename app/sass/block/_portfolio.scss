@@ -30,14 +30,14 @@
     .portfolio_box {
         display: flex;
         position: relative;
-        // width: i;
+
         .hover_box{
             visibility: hidden;
             position: absolute;
             z-index: -1;
             color: $txt-white-col;
             font-size: 1.3em;
-            @include easeIn(color $easeIn-2s);
+            @include easeIn(background $easeIn-2s);
         }
 
         &:hover .hover_box{
@@ -49,6 +49,18 @@
             height: 100%;
             z-index: 10;
             background: $grid-rgba;
+        }
+        
+        &::before{
+            content: '';
+            position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+            display: block;
+            z-index: 10;
+            background: $grid-hover-rgba;
         }
     }
 
@@ -66,18 +78,31 @@
 .image_zoom {
     align-self: center;
     margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: 0;
+    padding: 0;
     outline: none;
     width: 70px;
     height: 70px;
     background-color: $txt-white-col;
-    background-image: url(../icons/plus-100.png);
-    background-size: 50px;
-    background-repeat: no-repeat;
-    background-position: center center;
     border-radius: 50%;
-    @include easeIn(color $easeIn-2s);
-    &:hover {
-        box-shadow: inset 0 0 15px 10px $general-color-hover;
+    cursor: pointer;
+    transition: transform 350ms;
+
+    .cross{
+        max-width: 25px;
+            width: 100%;
+            height: 25px;
+        background-image: url(../icons/plus-25.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        transform: rotate(45deg);
+    }
+
+    &:hover{
+        // box-shadow: inset 0 0 15px 10px $general-color-hover;
+        transform: rotate(-45deg);
     }
 }
