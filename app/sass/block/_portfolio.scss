@@ -98,11 +98,17 @@
         background-image: url(../icons/plus-25.png);
         background-repeat: no-repeat;
         background-position: center center;
-        transform: rotate(45deg);
+        /*transform: rotate(45deg);*/
+        
     }
 
-    &:hover{
+    /*&:hover{
         // box-shadow: inset 0 0 15px 10px $general-color-hover;
         transform: rotate(-45deg);
+    }*/
+
+    &:active {
+        @include easeIn($easeIn-1s);
+        filter: brightness(85%);
     }
 }

@@ -82,6 +82,18 @@
 						left: 0;
 						right: 0;
 						top: 35%;
+						filter: grayscale(1);
+						&:hover {
+							filter: grayscale(0);
+						}
+				}
+
+				.teamate-social-icon {
+					filter: grayscale(1);
+					@include easeIn($easeIn-2s);
+					&:hover {
+						filter: grayscale(0);
+					}
 				}
 		}
 	}
