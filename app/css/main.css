@@ -170,6 +170,7 @@ li {
 
 .content_container {
   max-width: 1170px;
+  width: 100%;
   height: inherit;
   padding-top: 0;
   padding-bottom: 0;
@@ -770,4 +771,62 @@ li {
   font-size: 16px;
   margin-top: 50px;
   color: #616161;
+}
+
+.our_offices {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 53em;
+  padding: 35px 0 25px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.52))), url(../img/hero-03.jpg);
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.52)), url(../img/hero-03.jpg);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.52)), url(../img/hero-03.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.52)), url(../img/hero-03.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+}
+
+.our_offices .content_container {
+  margin-top: 220px;
+}
+
+.our_offices .our_offices-text {
+  margin-top: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #fafcfe;
+}
+
+.our_offices .box-row {
+  margin-top: 60px;
+}
+
+.our_offices .map {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.our_offices .map::before {
+  content: '';
+  position: inherit;
+  left: 218px;
+  display: inline-block;
+  max-width: 734px;
+  width: 100%;
+  height: 362px;
+  background: url("../img/world-atlas.png") no-repeat;
 }
