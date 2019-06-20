@@ -554,9 +554,9 @@ li {
   z-index: -1;
   color: #fafcfe;
   font-size: 1.3em;
-  -webkit-transition: color 0.2s ease-in;
-  -o-transition: color 0.2s ease-in;
-  transition: color 0.2s ease-in;
+  -webkit-transition: background 0.2s ease-in;
+  -o-transition: background 0.2s ease-in;
+  transition: background 0.2s ease-in;
 }
 
 .content_container .portfolio_box:hover .hover_box {
@@ -582,6 +582,18 @@ li {
   background: rgba(62, 140, 192, 0.92);
 }
 
+.content_container .portfolio_box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  z-index: 10;
+  background: rgba(62, 140, 192, 0.58);
+}
+
 .content_container .portfolio_image {
   width: 100%;
   height: auto;
@@ -597,24 +609,50 @@ li {
       -ms-flex-item-align: center;
           align-self: center;
   margin-bottom: 15px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 0;
+  padding: 0;
   outline: none;
   width: 70px;
   height: 70px;
   background-color: #fafcfe;
-  background-image: url(../icons/plus-100.png);
-  background-size: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 350ms;
+  transition: -webkit-transform 350ms;
+  -o-transition: transform 350ms;
+  transition: transform 350ms;
+  transition: transform 350ms, -webkit-transform 350ms;
+}
+
+.image_zoom .cross {
+  max-width: 25px;
+  width: 100%;
+  height: 25px;
+  background-image: url(../icons/plus-25.png);
   background-repeat: no-repeat;
   background-position: center center;
-  border-radius: 50%;
-  -webkit-transition: color 0.2s ease-in;
-  -o-transition: color 0.2s ease-in;
-  transition: color 0.2s ease-in;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .image_zoom:hover {
-  -webkit-box-shadow: inset 0 0 15px 10px #2980b9;
-          box-shadow: inset 0 0 15px 10px #2980b9;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .our_team {
