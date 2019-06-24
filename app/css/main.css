@@ -12,8 +12,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #fafcfe;
   max-width: 55px;
   width: 100%;
@@ -257,30 +256,6 @@ li {
   height: auto;
 }
 
-.block--shape-top::before {
-  content: '';
-  width: 100%;
-  height: 207px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: -206px;
-  display: block;
-  background: url("../img/Sep-top.png") no-repeat center;
-}
-
-.block--shape-bottom::after {
-  content: '';
-  width: 100%;
-  height: 207px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -206px;
-  display: block;
-  background: url("../img/Sep-bottom.png") no-repeat bottom;
-}
-
 .header-wrapper {
   width: 100%;
   height: inherit;
@@ -304,8 +279,7 @@ li {
   width: 100%;
   height: 960px;
   background-image: url("../img/hero-01.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center center;
   position: relative;
 }
@@ -382,8 +356,7 @@ li {
 
 .header_content-link {
   border: 2px solid #ffffff;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
   padding: 14px 40px;
   -webkit-transition: color 0.2s ease-in;
   -o-transition: color 0.2s ease-in;
@@ -441,6 +414,30 @@ li {
   position: relative;
   padding: 35px 0 25px 0;
   height: 25em;
+}
+
+.services::before {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -206px;
+  display: block;
+  background: url("../img/Sep-top.png") no-repeat center;
+}
+
+.services::after {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -206px;
+  display: block;
+  background: url("../img/Sep-bottom.png") no-repeat bottom;
 }
 
 .services .content_container {
@@ -503,11 +500,9 @@ li {
   height: auto;
   padding: 35px 0 25px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.65)), to(rgba(33, 33, 33, 0.95))), url(../img/hero-02.jpg);
-  background: -webkit-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-02.jpg);
   background: -o-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-02.jpg);
   background: linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-02.jpg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -628,8 +623,7 @@ li {
   width: 70px;
   height: 70px;
   background-color: #fafcfe;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   cursor: pointer;
   -webkit-transition: -webkit-transform 350ms;
   transition: -webkit-transform 350ms;
@@ -716,8 +710,7 @@ li {
   max-width: 250px;
   width: 100%;
   height: 250px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 
 .our_team .team-box .teamate-name {
@@ -748,8 +741,7 @@ li {
   top: 0;
   width: 250px;
   height: 250px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
   background: rgba(62, 140, 192, 0.58);
   -webkit-transition: background 0.2s ease-in;
   -o-transition: background 0.2s ease-in;
@@ -815,11 +807,9 @@ li {
   height: 53em;
   padding: 35px 0 25px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.65)), to(rgba(33, 33, 33, 0.95))), url(../img/hero-03.jpg);
-  background: -webkit-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-03.jpg);
   background: -o-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-03.jpg);
   background: linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-03.jpg);
-  -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -894,4 +884,78 @@ li {
 .our_offices .map .map_geotag:nth-child(3) {
   right: 41%;
   top: 41%;
+}
+
+.our_clients {
+  position: relative;
+  width: 100%;
+  height: 25em;
+}
+
+.our_clients::before {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -206px;
+  display: block;
+  background: url("../img/Sep-top.png") no-repeat center;
+}
+
+.our_clients::after {
+  content: '';
+  width: 100%;
+  height: 207px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -206px;
+  display: block;
+  background: url("../img/Sep-bottom.png") no-repeat bottom;
+}
+
+.our_clients .content_container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 0 25px 0;
+}
+
+.our_clients .block-headline--wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 360px;
+  min-height: 125px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 0.73em;
+}
+
+.clients-slider-block {
+  position: relative;
+  min-height: 280px;
 }
