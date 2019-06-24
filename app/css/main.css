@@ -969,3 +969,69 @@ li {
   position: relative;
   min-height: 280px;
 }
+
+.contact_us {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 53em;
+  padding: 35px 0 25px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.65)), to(rgba(33, 33, 33, 0.95))), url(../img/hero-04.jpg);
+  background: -webkit-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-04.jpg);
+  background: -o-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-04.jpg);
+  background: linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-04.jpg);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center center;
+}
+
+.contact_us .contact_us-text {
+  margin-top: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #fafcfe;
+}
+
+.contact_us .contact_us-box {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_us .contact_us-box .contact_us-box-text,
+.contact_us .contact_us-box .contact_us-box-link {
+  color: #fafcfe;
+}
+
+.contact_us .contact_us-box .contact_us-box-text {
+  margin-top: 17px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact_us .contact_us-box .contact_us-box-link {
+  margin-top: 12px;
+  font-weight: 250;
+  font-size: 15px;
+}
