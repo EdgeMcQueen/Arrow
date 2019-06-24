@@ -1,3 +1,4 @@
+// TODO: Нужно реализовать увеличение изображения при клике на .image_zoom
 .portfolio {
     @include flex-col-btw;
     width: 100%;
@@ -50,7 +51,7 @@
             z-index: 10;
             background: $grid-rgba;
         }
-        
+
         &::before{
             content: '';
             position: absolute;
@@ -68,7 +69,7 @@
         width: 100%;
         height: auto;
     }
-}
+} // end of .content_container
 
 .portfolio_text {
     position: absoute;
@@ -99,7 +100,6 @@
         background-repeat: no-repeat;
         background-position: center center;
         /*transform: rotate(45deg);*/
-        
     }
 
     /*&:hover{
@@ -111,4 +111,4 @@
         @include easeIn($easeIn-1s);
         filter: brightness(85%);
     }
-}
+} // end of .image_zoom

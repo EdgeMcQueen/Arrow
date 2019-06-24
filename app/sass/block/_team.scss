@@ -3,7 +3,7 @@
 	position: relative;
 	@include shape_top;
 	@include shape_bottom;
-	
+
 	.content_container{
 		box-sizing: content-box;
 	}
@@ -75,8 +75,8 @@
 						filter: grayscale(0);
 					}
 				}
-		}
-	}
+		} // end of .hover-content
+	} // end of .team-box
 
 	.our_team-text{
 		text-align: center;
@@ -84,6 +84,4 @@
 		margin-top: 50px;
 		color: $txt-black-col;
 	}
-
-
-}
+} // end of .our_team

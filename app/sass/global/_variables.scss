@@ -1,15 +1,15 @@
 // color variables
 // font color
-$general-color: #ffffff;
-$general-color-black: #000000;
-$general-color-grey: #616161;
-$general-color-brand: #8f9cb3;
-$general-color-hover: #2980b9;
-$headline-blue: #2980b9;
-$headline-white: #fafcfe;
+$general-color: 		#ffffff;
+$general-color-black: 	#000000;
+$general-color-grey: 	#616161;
+$general-color-brand: 	#8f9cb3;
+$general-color-hover: 	#2980b9;
+$headline-blue: 		#2980b9;
+$headline-white: 		#fafcfe;
 
 // background color
-$background-white: #ffffff;
+$background-white:		#ffffff;
 
 
 // text
@@ -20,58 +20,12 @@ $txt-blue-col: 			#2980b9;
 //background & others
 $background-col: 		#fafcfe;
 $grid-hover-col: 		#3e8cc0;
-$grid-hover-rgba: 	rgba(62, 140, 192, 0.58);
-$grid-rgba: 				rgba(62, 140, 192, 0.92);
+$grid-hover-rgba: 		rgba(62, 140, 192, 0.58);
+$grid-rgba: 			rgba(62, 140, 192, 0.92);
 $offices-rgba: 			rgba(76, 77, 77, 0.9);
 $gradient-col: 			#212121;
+$fixed-nav-bg:			rgba(62, 140, 192, 0.58);
 
 // portfolio hover
-$zoom-hover-blue: #2980b977;
-$zoom-hover-white: #ffffff55;
-
-
-// единый класс для иконок:
-.icons{
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
-	background-color: $background-col;
-	max-width: 55px;
-			width: 100%;
-			height: 55px;
-
-		.tw,
-		.link-in,
-		.inst{
-			&::before{
-				content: '';
-				display: flex;
-			}
-		}
-
-		.tw{
-			&::before{
-				width: 30px;
-				height: 24px;
-				background: url(../icons/twitter-blue-100.png);
-			}
-		}
-
-		.link-in{
-			&::before{
-				width: 30px;
-				height: 30px;
-				background: url(../icons/linkedin-100.png);
-			}
-		}
-
-		.inst{
-			&::before{
-				width: 30px;
-				height: 30px;
-				background: url(../icons/instagram-100.png);
-			}
-		}
-
-}
+$zoom-hover-blue: 		#2980b977;
+$zoom-hover-white: 		#ffffff55;

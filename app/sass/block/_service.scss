@@ -6,29 +6,28 @@
 	@include shape_top;
 	@include shape_bottom;
 
-		.content_container{
-			display: flex;
+	.content_container{
+		display: flex;
+		flex-direction: column;
+
+		.services__box{
+			display: inline-flex;
 			flex-direction: column;
+			align-items: center;
+			padding: 0 12px;
+			text-align: center;
+			max-width: 230px;
+					width: 100%;
 
-			.services__box{
-				display: inline-flex;
-				flex-direction: column;
-				align-items: center;
-				padding: 0 12px;
-				text-align: center;
-				max-width: 230px;
-						width: 100%;
-
-					.box_icon{
-						max-width: 100px;
-								/*width: 100%;*/
-								height: auto;
-					}
+			.box_icon{
+					max-width: 100px;
+							/*width: 100%;*/
+							height: auto;
 			}
-
 		}
+	}
 
-		.box-row{
-			margin-top: 85px;
-		}
+	.box-row{
+		margin-top: 85px;
+	}
 }

@@ -11,26 +11,23 @@
   <title>Arrow v3.0</title>
 </head>
 <body class="body">
-  <div id="burger-menu" class="burger-menu" vis-hide>
-    <ul class="burger-menu__list">
-      <li class="burger-menu__list-item"><img class="menu-logo" src="icons/menu-logo.png" alt="Логотип сайта" width="72" height="43"></li>
-      <li class="burger-menu__list-item"><a href="#services-block" class="burger-menu__link">Services</a></li>
-      <li class="burger-menu__list-item"><a href="#portfolio-block" class="burger-menu__link">Portfolio</a></li>
-      <li class="burger-menu__list-item"><a href="#team-block" class="burger-menu__link">Team</a></li>
-      <li class="burger-menu__list-item"><a href="#offices-block" class="burger-menu__link">Offices</a></li>
-      <li class="burger-menu__list-item"><a href="#clients-block" class="burger-menu__link">Clients</a></li>
-      <li class="burger-menu__list-item"><a href="#contact-block" class="burger-menu__link">Contact</a></li>
-    </ul>
-<!-- иконка бургер меню -->
-	<input type="checkbox" id="menu-toogle" />
-	<label id="menu-burger" class="menu-burger" for="menu-toogle">
-		<span class="menu-burger-line menu-burger-1"></span>
-		<span class="menu-burger-line menu-burger-2"></span>
-		<span class="menu-burger-line menu-burger-3"></span>
-	</label>
-  </div>
-
-  <header class="header">
+  <!--star fixed-nav-->
+  <header class="header" id="home-block">
+      <div id="fixed-nav" class="fixed-nav">
+          <div class="nav_container">
+            <img class="main_logo" src="icons/logo.png" alt="Логотип сайта" width="72" height="43">
+          <ul class="fixed-nav_list">
+            <li class="fixed-nav_item"><a href="#home-block" class="fixed-nav_link">Home</a></li>
+            <li class="fixed-nav_item"><a href="#services-block" class="fixed-nav_link">Services</a></li>
+            <li class="fixed-nav_item"><a href="#portfolio-block" class="fixed-nav_link">Portfolio</a></li>
+            <li class="fixed-nav_item"><a href="#team-block" class="fixed-nav_link">Team</a></li>
+            <li class="fixed-nav_item"><a href="#offices-block" class="fixed-nav_link">Offices</a></li>
+            <li class="fixed-nav_item"><a href="#clients-block" class="fixed-nav_link">Clients</a></li>
+            <li class="fixed-nav_item"><a href="#contact-block" class="fixed-nav_link">Contact</a></li>
+          </ul>
+          </div>
+      </div>
+      <!--end fixed-nav-->
     <div class="content_container">
     <div class="header-wrapper">
     <nav class="nav">
@@ -113,10 +110,10 @@
                 </button>
               </div>
             </div>
-  
+
             <div class="portfolio_box">
               <img src="img/p2.jpg" alt="portfolio image" class="portfolio_image">
-              
+
               <div class="hover_box">
                 <span class="portfolio_text">iPhone App UI Design</span>
                 <button class="image_zoom">
@@ -124,10 +121,10 @@
                 </button>
               </div>
             </div>
-  
+
             <div class="portfolio_box">
               <img src="img/p3.jpg" alt="portfolio image" class="portfolio_image">
-              
+
               <div class="hover_box">
                 <span class="portfolio_text">iPhone App UI Design</span>
                 <button class="image_zoom">
@@ -135,10 +132,10 @@
                 </button>
               </div>
             </div>
-  
+
             <div class="portfolio_box">
               <img src="img/p4.jpg" alt="portfolio image" class="portfolio_image">
-              
+
               <div class="hover_box">
                 <span class="portfolio_text">iPhone App UI Design</span>
                 <button class="image_zoom">
@@ -146,10 +143,10 @@
                 </button>
               </div>
             </div>
-  
+
             <div class="portfolio_box">
               <img src="img/p5.jpg" alt="portfolio image" class="portfolio_image">
-              
+
               <div class="hover_box">
                 <span class="portfolio_text">iPhone App UI Design</span>
                 <button class="image_zoom">
@@ -157,10 +154,10 @@
                 </button>
               </div>
             </div>
-  
+
             <div class="portfolio_box">
               <img src="img/p6.jpg" alt="portfolio image" class="portfolio_image">
-              
+
               <div class="hover_box">
                 <span class="portfolio_text">iPhone App UI Design</span>
                 <button class="image_zoom">
@@ -387,7 +384,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <script src="js/burger.js"></script>
+  <script src="js/fixed-nav.js"></script>
   <script src="js/anchorscroll.js"></script>
   <!-- <script src="js/wrapSelector.js"></script> -->
 </body>

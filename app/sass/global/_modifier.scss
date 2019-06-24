@@ -1,5 +1,6 @@
 // описываем модификаторы:
 
+// синие заголовки секций
 .block__headline--blue{
   text-align: center;
   font-weight: bold;
@@ -19,6 +20,8 @@
     }
 }
 
+// белые заголовки секций
+
 .block__headline--white{
   text-align: center;
   font-weight: bold;
@@ -37,6 +40,8 @@
           right: 0;
     }
 }
+
+// обёртка заголовков секций
 
 .block-headline--wrapper{
   display: flex;
