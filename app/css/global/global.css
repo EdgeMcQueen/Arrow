@@ -12,8 +12,7 @@
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   background-color: #fafcfe;
   max-width: 55px;
   width: 100%;
@@ -33,7 +32,7 @@
 .icons .tw::before {
   width: 30px;
   height: 24px;
-  background: url(../icons/twitter-100.png);
+  background: url(../icons/twitter-blue-100.png);
 }
 
 .icons .link-in::before {
