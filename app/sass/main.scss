@@ -1,0 +1,21 @@
+// integrate all SCSS files
+
+// global style settings
+
+@import "global/global";
+
+// block styles
+
+@import "block/fixed-nav"; //Стиль фиксированной навигации
+@import "block/header"; //Стиль блока шапки
+@import "block/service"; //Стиль блока сервиса
+@import "block/portfolio"; //Стиль блока портфолио
+@import "block/team"; //Стиль блока комманды
+@import "block/office"; //Стиль блока оффисов
+@import "block/client"; //Стиль блока клиентуры
+@import "block/contact"; //Стиль блока контактов и связи
+@import "block/footer"; //Стиль блока подвал
+
+// media query
+
+@import "media/media";

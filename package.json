@@ -1,20 +1,22 @@
 {
-  "name": "Gulp-project",
+  "name": "project",
   "version": "1.0.0",
+  "description": "Фронтенд окружение",
   "main": "index.js",
-  "repository": "https://github.com/SardorMutalov/Gulp-project.git",
-  "author": "Sardor.Mutalov <45397981+SardorMutalov@users.noreply.github.com>",
-  "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.1",
+    "browser-sync": "^2.26.7",
+    "del": "^4.1.0",
+    "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-cache": "^1.1.1",
     "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "node-sass": "^4.11.0"
+    "gulp-uglifyjs": "^0.6.2"
   },
-  "dependencies": {
-    "gulp-imagemin": "^5.0.3"
-  }
+  "author": "ko2doo@github.com",
+  "license": "ISC",
+  "repository": "https://github.com/SardorMutalov/Arrow.git"
 }
