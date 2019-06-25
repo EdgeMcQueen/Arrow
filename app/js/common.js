@@ -11,8 +11,5 @@ $(document).ready(function(){
     $('#search.active').removeClass('active').addClass('close');
   });
   
-  
-  
-  
 });//end
 

@@ -162,7 +162,8 @@ li {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   background-color: #fafcfe;
   max-width: 55px;
   width: 100%;
@@ -337,7 +338,8 @@ li {
   width: 100%;
   height: 960px;
   background-image: url("../img/hero-01.jpg");
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center center;
   position: relative;
 }
@@ -414,7 +416,8 @@ li {
 
 .header_content-link {
   border: 2px solid #ffffff;
-  border-radius: 5px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
   padding: 14px 40px;
   -webkit-transition: color 0.2s ease-in;
   -o-transition: color 0.2s ease-in;
@@ -558,9 +561,11 @@ li {
   height: auto;
   padding: 35px 0 25px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.65)), to(rgba(33, 33, 33, 0.95))), url(../img/hero-02.jpg);
+  background: -webkit-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-02.jpg);
   background: -o-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-02.jpg);
   background: linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-02.jpg);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center center;
 }
 
@@ -681,7 +686,8 @@ li {
   width: 70px;
   height: 70px;
   background-color: #fafcfe;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   cursor: pointer;
   -webkit-transition: -webkit-transform 350ms;
   transition: -webkit-transform 350ms;
@@ -768,7 +774,8 @@ li {
   max-width: 250px;
   width: 100%;
   height: 250px;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .our_team .team-box .teamate-name {
@@ -799,7 +806,8 @@ li {
   top: 0;
   width: 250px;
   height: 250px;
-  border-radius: 4px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
   background: rgba(62, 140, 192, 0.58);
   -webkit-transition: background 0.2s ease-in;
   -o-transition: background 0.2s ease-in;
@@ -865,9 +873,11 @@ li {
   height: 53em;
   padding: 35px 0 25px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.65)), to(rgba(33, 33, 33, 0.95))), url(../img/hero-03.jpg);
+  background: -webkit-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-03.jpg);
   background: -o-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-03.jpg);
   background: linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-03.jpg);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center center;
 }
 
@@ -1036,9 +1046,11 @@ li {
   height: 53em;
   padding: 35px 0 25px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 33, 33, 0.65)), to(rgba(33, 33, 33, 0.95))), url(../img/hero-04.jpg);
+  background: -webkit-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-04.jpg);
   background: -o-linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-04.jpg);
   background: linear-gradient(rgba(33, 33, 33, 0.65), rgba(33, 33, 33, 0.95)), url(../img/hero-04.jpg);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: center center;
 }
 
