@@ -1,0 +1,78 @@
+.header-wrapper {
+    width: 100%;
+    height: inherit;
+    @include flex-col-btw;
+    padding: 35px 0;
+}
+
+.header {
+	width: 100%;
+    height: 960px;
+    background-image: url('../img/hero-01.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.nav {
+    @include flex-rw-btw;
+    max-width: 1140px;
+        width: 100%;
+
+    &_list {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 480px;
+        height: auto;
+    }
+
+    &_list-item {
+        display: inherit;
+        line-height: 2.5;
+    }
+
+    &_link {
+        @include ease(color $ease-2s);
+        &:hover {
+            color: $general-color-hover;
+        }
+    }
+}  // end of .nav
+
+.header_content {
+    @include flex-col-btw;
+    align-self: center;
+    align-items: center;
+    width: 670px;
+    height: 280px;
+
+    &-text {
+        text-align: center;
+    }
+
+    &-link {
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        padding: 14px 40px;
+        @include easeIn(color $easeIn-2s);
+        &:hover {
+            background-color: #ffffff;
+            color: $general-color-hover;
+        }
+    }
+} // end of .header_content
+
+.scroll-down-icon {
+    z-index: 999;
+    width: 110px;
+    height: 65px;
+    @include flex-col-btw;
+    align-items: center;
+    align-self: center;
+    line-height: 2.5;
+    z-index: 10;
+    @include ease(color $ease-2s);
+    &:hover {
+        color: $general-color-hover;
+    }
+}
