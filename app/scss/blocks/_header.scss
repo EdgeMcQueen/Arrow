@@ -1,0 +1,98 @@
+.header {
+	width: auto;
+    background-image: url('../img/hero-01.jpg');
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.nav {
+    @include flex-rw-btw;
+    @include col();
+    margin: 0;
+    margin-top: em(35);
+    @include xs-block() {
+        display: none;
+    }
+    @include sm-block() {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    & .main_logo {
+        @include sm-block() {
+            margin: 0 100%;
+        }
+    }
+
+    &_list {
+        display: inline-flex;
+        justify-content: space-between;
+        @include col();
+        @include size(6);
+        @include lg-block() {
+            @include size(7);
+        }
+        @include md-block() {
+            @include size(10);
+        }
+        @include sm-block() {
+            @include size(12);
+        }
+        @include xs-block() {
+            @include size(12);
+        }
+        margin: 0;
+    }
+
+    &_list-item {
+        line-height: 2.5;
+    }
+
+    &_link {
+        @include ease(color $ease-2s);
+        &:hover {
+            color: $general-color-hover;
+        }
+    }
+}  // end of .nav
+
+.header_content {
+    @include flex-col-btw;
+    align-self: center;
+    align-items: center;
+    max-width: em(670);
+    margin: em(345) 0;
+
+    &-text {
+        text-align: center;
+        margin-top: em(40);
+        margin-bottom: em(30);
+    }
+
+    &-link {
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        padding: 14px 40px;
+        @include easeIn(color $easeIn-2s);
+        &:hover {
+            background-color: #ffffff;
+            color: $general-color-hover;
+        }
+    }
+} // end of .header_content
+
+.scroll-down-icon {
+    z-index: 999;
+    width: 110px;
+    height: 65px;
+    @include flex-col-btw;
+    align-items: center;
+    align-self: center;
+    line-height: 2.5;
+    z-index: 10;
+    @include ease(color $ease-2s);
+    &:hover {
+        color: $general-color-hover;
+    }
+}

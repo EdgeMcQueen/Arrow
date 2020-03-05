@@ -1,8 +1,14 @@
-//Mixins
-@import 'mixins/_mixins.scss'; //mixins
-
 // Преднастройки
 @import "stylesheets/_stylesheets.scss";
 
-// Основные файлы
-@import "block/_header.scss";
+// block styles
+
+@import "blocks/fixed-nav"; //Стиль фиксированной навигации
+@import "blocks/header"; //Стиль блока шапки
+@import "blocks/service"; //Стиль блока сервиса
+@import "blocks/portfolio"; //Стиль блока портфолио
+@import "blocks/team"; //Стиль блока комманды
+@import "blocks/office"; //Стиль блока оффисов
+@import "blocks/client"; //Стиль блока клиентуры
+@import "blocks/contact"; //Стиль блока контактов и связи
+@import "blocks/footer"; //Стиль блока подвал

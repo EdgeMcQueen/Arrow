@@ -1,27 +1,60 @@
-// объявем переменные с размерами шрифтов:
-$def-size:      18px;
-$headline-size: 25px;
-$subline:       20px;
-$par-size:      14px;
+/*@font-face{
+  font-family: "";
+  font-weight: ;
+  src: url("../../fonts/");
+}*/
 
-@font-face{
-  font-family: "Exo2-Regular";
-  font-weight: 400;
-  src: url("../../fonts/Exo2-Regular.ttf");
-}
-@font-face{
-  font-family: "Exo2-Medium";
-  font-weight: 500;
-  src: url("../../fonts/Exo2-Medium.ttf");
-}
-@font-face{
-  font-family: "Exo2-Black";
-  font-weight: 900;
-  src: url("../../fonts/Exo2-Black.ttf");
+@mixin font-face{
+	@font-face{
+		font-family: Raleway-Bold;
+		src: url(../font/Raleway-Bold.otf);
+	}
+
+	@font-face{
+		font-family: Raleway-ExtraBold;
+		src: url(../font/Raleway-ExtraBold.otf);
+	}
+
+	@font-face{
+		font-family: Raleway-ExtraLight;
+		src: url(../font/Raleway-ExtraLight.otf);
+	}
+
+	@font-face{
+		font-family: Raleway-Heavy;
+		src: url(../font/Raleway-Heavy.otf);
+	}
+
+	@font-face{
+		font-family: Raleway-Light;
+		src: url(../font/Raleway-Light.otf);
+	}
+
+	@font-face{
+		font-family: Raleway-Medium;
+		src: url(../font/Raleway-Medium.otf);
+	}
+
+	@font-face{
+		font-family: Raleway-Regular;
+		src: url(../font/Raleway-Regular.otf);
+	}
+
+	@font-face{
+		font-family: Raleway-SemiBold;
+		src: url(../font/Raleway-SemiBold.otf);
+	}
+
+	@font-face{
+		font-family: Raleway-Thin;
+		src: url(../font/Raleway-Thin.otf);
+	}
 }
 
-html,
-body{
-  @include exo2-regular;
-  font-size: 14px;
+
+@mixin font($size, $weight) {
+	font:{
+		size: $size;
+		weight: $weight;
+	}
 }
